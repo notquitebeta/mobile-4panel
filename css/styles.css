@@ -1,3 +1,8 @@
+html, body { height: 100%; width: 100%; margin: 0; }
+div { height: 100%; width: 100%; background: #F52887; }
+html{
+  height: 100%;
+}
 body {
   background-color: #BBCCEE;
   font-family: 'Varela Round', sans-serif;
@@ -25,16 +30,13 @@ body {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) {
-
   article{
     position: fixed;
     top: 20px;
     left:50%;
     margin-left: -10%;
   }
-/*  header{
-    display: inline-block;
-  }*/
+
   h1,h2,h3,h4 {
     text-align: center;
   }
@@ -97,13 +99,29 @@ and (-webkit-min-device-pixel-ratio: 1)  {
   h1,h2,h3,h4 {
     text-align: center;
   }
-  h1 {
-    margin-top:5px;
+  h2 {
+    margin-top: 0px;
   }
   body {
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: hsl(0,0%,95%);
+  }
+  header{
+    height: 8%;
+  }
+  section{
+    height: 92%;
+  }
+  #tab1, #tab2, #tab3, #tab4 {
+    background-color: hsl(240,10%,90%);
+    margin-bottom: 3px;
+    width: 49%;
+    height: 48%;
+    display: inline-block;
+    box-shadow: 2px 2px 2px hsl(0,50%,10%);
+
   }
 
   #bottomNav {visibility: hidden;}
