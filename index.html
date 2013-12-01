@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+
+  <title>Scientific Solutions</title>
+  <meta name="description" content="HTML content">
+  <meta name="Hua Su" content="Founder">
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <!-- <link ref="stylesheet" href="css/styles.css?v=1.0"> -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+  <header><h1>Program</h1></header>
+
+  <section id="panels">
+    <article id="tab1" class="selected">
+      <header><h2>Tab1</h2></header>
+    </article>
+
+    <article id="tab2" class="notSelected hideMobile">
+      <header><h2>Tab2</h2></header>
+    </article>
+
+    <article id="tab3" class="notSelected hideMobile">
+      <header><h2>Tab3</h2></header>
+    </article>
+
+    <article id="tab4" class="notSelected hideMobile">
+      <header><h2>Tab4</h2></header>
+    </article>
+  </section>
+
+  <nav id="bottomNav"> <!-- hide on desktop -->
+    <ul class="nav">
+      <li class="navtab selected" data-tab="navtab1">Find</li>
+      <li class="navtab notSelected" data-tab="navtab2">2</li>
+      <li class="navtab notSelected" data-tab="navtab3">3</li>
+      <li class="navtab notSelected" data-tab="navtab4">4</li>
+    </ul>
+  </nav>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/application.js"></script>
+  <script src="js/fastclick.js"></script>
+  <script src="js/cookie.js"></script>
+
+  <footer><span class="footer centered hideMobile">&copy;2013. <a href="mailto:notquitebeta@gmail.com">Not Quite Beta</a></span></footer>
+</body>
+</html>
+
+<!--
+-->

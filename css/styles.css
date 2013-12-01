@@ -1,0 +1,123 @@
+body {
+  background-color: #BBCCEE;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.hidden {
+  display:none;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.footer{
+  text-align: center;
+  color: hsl(240,80%,10%);
+  position: fixed;
+  bottom: 6px;
+  width: 100%;
+  font-size: 0.7em;
+  opacity: 0.5;
+}
+
+/* phone */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+
+  article{
+    position: fixed;
+    top: 20px;
+    left:50%;
+    margin-left: -10%;
+  }
+/*  header{
+    display: inline-block;
+  }*/
+  h1,h2,h3,h4 {
+    text-align: center;
+  }
+  h1 {
+    margin-top:5px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0,0%,95%);
+  }
+  .hideMobile { visibility: hidden;}
+
+  #bottomNav {
+    position: fixed;
+    height: 50px;
+    bottom: 9px;
+    margin-left: -40px;
+  }
+  #bottomNav li{
+    text-align: center;
+    list-style: none;
+    display: inline;
+    float: left;
+    width:78px;
+    padding: 10px 0;
+    border-top:1px solid hsl(0,0%,95%);
+    border-right:2px solid hsl(0,0%,45%);
+    border-bottom:2px solid hsl(0,0%,45%);
+  }
+  #bottomNav .notSelected{
+    border-top:1px dotted hsl(0,0%,45%);
+    padding-top: -2px;
+    background-color: hsl(0,0%,80%);
+    opacity: 0.9;
+  }
+}
+
+/*ipad partrait*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  {
+    .hide-mobile { visibility: hidden;}
+}
+
+/*ipad landscape*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1)  {
+    .hide-mobile { visibility: hidden;}
+}
+
+/*default*/
+@media screen and (min-width: 40.5em) {
+
+  h1,h2,h3,h4 {
+    text-align: center;
+  }
+  h1 {
+    margin-top:5px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0,0%,95%);
+  }
+
+  #bottomNav {visibility: hidden;}
+}
+
+
+/*clearfix*/
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+  zoom: 1; /* IE 6&7 */
+}
